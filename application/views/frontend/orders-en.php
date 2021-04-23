@@ -1,0 +1,1 @@
+<?php$status = array('cancel_pay'=>'danger','waiting_pay'=>'warning','success_pay'=>'success');foreach($orders as $order){	$order->plans = implode(' , ',array_intersect_key($plans, array_flip(explode(',',$order->odplid))));	print_r($order->plans.' '.$status[$order->odtype]);}?>

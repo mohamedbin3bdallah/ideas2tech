@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+html,body,h1,h2,h3,h4,h5,h6,a,p
+{
+	font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+.container
+{
+	direction: rtl;
+}
+
+.logo
+{
+	direction: ltr;
+}
+
+.circle {
+	width: 15px;
+	height: 15px;
+	/*border: solid 3px #089ea6;*/
+	border: solid 3px #1fcdff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	padding-bottom: 3em;
+}
+
+.circlebig {
+	width: 25px;
+	height: 25px;
+	border: solid 5px #777;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	padding-bottom: 5em;
+	margin-bottom: -15%;
+}
+
+.rotate10
+{
+	transform: rotate(10deg);
+}
+
+.aboutme
+{
+	/*background-color: #ededed;*/
+	background: rgba(153, 153, 153, 0.32);
+	text-align: justify;
+	padding: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	/*border-radius: 25px;*/
+	box-shadow: 0 8px 16px 0 #999, 0 6px 20px 0 #999;
+}
+
+.aboutme:hover
+{
+	-webkit-animation-name: about;
+	animation-name: about;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,1);
+}
+
+@-webkit-keyframes about {
+    0%   {-webkit-transform: rotate(0deg);}
+    25%  {-webkit-transform: rotate(-5deg);}
+    50%  {-webkit-transform: rotate(0deg);}
+    75%  {-webkit-transform: rotate(5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+@keyframes about {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(-5deg);}
+    50%  {transform: rotate(0deg);}
+    75%  {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.portf_div:hover
+{
+	-webkit-animation-name: portfolio;
+	animation-name: portfolio;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes portfolio {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes portfolio {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#filter  li
+{
+	float: right;
+}
+
+.portf_desc
+{
+	direction: rtl;
+	text-align: justify;
+}
+
+.portf_div
+{
+	/*background-color: #ededed;*/
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#555;
+	background-size:16px 16px;
+	color: #fff;
+	padding: 25px;
+	margin-top: 25px;
+	margin-bottom: 55px;
+	border-top-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	box-shadow: 0 8px 16px 0 #999, 0 6px 20px 0 #999;
+}
+
+.pp_description
+{
+	direction: rtl;
+	text-align: justify;
+}
+
+.pp_nav
+{
+	display: none;
+}
+
+.forma
+{
+	transform: rotate(3deg);
+	margin-bottom: 25px;
+}
+
+.forma input, .forma textarea
+{
+	box-shadow: 0 3px 5px 0 #999, 0 6px 10px 0 #999;
+}
+
+.cont
+{
+	background-color: #ededed;
+	/*background: rgba(153, 153, 153, 0.32);*/
+	/*text-align: justify;*/
+	padding: 25px;
+	margin-top: 65px;
+	margin-bottom: 25px;
+	/*border-radius: 25px;*/
+	box-shadow: 0 8px 16px 0 #999, 0 6px 20px 0 #999;
+	transform: rotate(-7deg);
+}
+
+.camera_caption
+{
+	text-align: right;
+}

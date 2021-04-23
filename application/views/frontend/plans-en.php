@@ -1,0 +1,1 @@
+<?phpprint_r($plans_A);print_r($plans_B);?>
